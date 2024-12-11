@@ -1,5 +1,5 @@
 #this is a file with recommended variable names
-prefix          = "test"
+prefix          = "jasontest"
 environment     = "dev"
 location        = "eastus"
 partition_count = "2"
