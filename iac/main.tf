@@ -66,9 +66,14 @@ resource "azurerm_app_service_plan" "sagalogic-app-service-plan" {
   resource_group_name = azurerm_resource_group.sagalogic-resource-group.name
   location            = azurerm_resource_group.sagalogic-resource-group.location
 
+  # sku {
+  #   tier = "Standard"
+  #   size = "S1"
+  # }
+
   sku {
-    tier = "Standard"
-    size = "S1"
+    tier = "Basic"
+    size = "B1"
   }
 
   tags = {
